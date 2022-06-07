@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PositiveLogInTestSuite" verbose="1">
+	
+	<test name="PositiveLogInTest">
+		<parameter name="username" value="testallyou001@gmail.com"></parameter>
+		<parameter name="password" value="test1903."></parameter>
+		<parameter name="expectedMessage" value="Tsk Tsk! There is no item in your cart"></parameter>
+		<classes>
+			<class name="allYouPlay.loginTest.PositiveTests" />
+		</classes>
+	</test>
+	
+</suite>

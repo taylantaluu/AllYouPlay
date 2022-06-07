@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NegativeLogInTestSuite" verbose="1" parallel="tests" thread-count="1">
+
+	<test name="NegativePasswordTest">
+		<parameter name="username" value="testallyou001@gmail.com"></parameter>
+		<parameter name="password" value="test12345"></parameter>
+		<parameter name="expectedMessage" value="Watch out, the account credentials you have written are not correct."></parameter>
+		<classes>
+			<class name="allYouPlay.loginTest.NegativeTests">
+			</class>
+		</classes>
+	</test>
+
+	<test name="CustomerNotFoundTest">
+		<parameter name="username" value="testallyo1u001@gmail.com"></parameter>
+		<parameter name="password" value="test12345"></parameter>
+		<parameter name="expectedMessage" value="No customer account found"></parameter>
+		<classes>
+			<class name="allYouPlay.loginTest.NegativeTests">
+			</class>
+		</classes>
+	</test>
+</suite>
